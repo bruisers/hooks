@@ -1,0 +1,249 @@
+----------- R200 -----------
+AnimationSequence as 'fe'
+ ^ implements com/minibot/internal/accessors/oldschool/RSAnimationSequence
+Boundary as 'hk'
+ ^ implements com/minibot/internal/accessors/oldschool/RSBoundary
+ # plane --> hk.l * -486262227 - I
+ # backup --> hk.e - Lhi;
+ # orientation --> hk.m * -1936125561 - I
+ # worldX --> hk.q * 1658643165 - I
+ # worldY --> hk.f * -457731185 - I
+ # flags --> hk.t * -607759825 - I
+ # model --> hk.a - Lhi;
+ # id --> hk.i - J
+Cache as 'ii'
+ ^ implements com/minibot/internal/accessors/oldschool/RSCache
+CacheableNode as 'nu'
+ ^ implements com/minibot/internal/accessors/oldschool/RSCacheableNode
+ # next --> nu.cv - Lnu;
+ # previous --> nu.cn - Lnu;
+Canvas as 'd'
+ ^ implements com/minibot/internal/accessors/oldschool/input/Canvas
+Character as 'cd'
+ ^ implements com/minibot/internal/accessors/oldschool/RSCharacter
+ # orientation --> cd.cx * 1495923269 - I
+ # x --> cd.ah * 62759075 - I
+ # y --> cd.ay * 1009828555 - I
+ # interactingIndex --> cd.bx * 1294228425 - I
+ # animation --> cd.bs * -174294577 - I
+ @ BROKEN: Character#healthBars
+Client as 'client'
+ ^ implements com/minibot/internal/accessors/oldschool/Client
+ # plane --> ha.kt * -1805668533 - static I
+ # npcs --> client.gd - static [Lcw;
+ # loginState --> bi.ae * -241225043 - static I
+ # objects --> hy.ah - static [Lhw;
+ # widgetHeights --> client.qi - static [I
+ # widgetPositionsY --> client.pu - static [I
+ # password --> bi.bf - static Ljava/lang/String;
+ # widgetPositionsX --> client.pf - static [I
+ # tileHeights --> bl.l - static [[[I
+ # cameraYaw --> cp.ih * -251028917 - static I
+ # hintNpcIndex --> client.dy * -687927463 - static I
+ # settings --> iv.f - static [I
+ # canvas --> client.al - Ljava/awt/Canvas;
+ & processAction --> nr.hw(IIIILjava/lang/String;Ljava/lang/String;IIB)V [2] - byte
+ # players --> client.ka - static [Lci;
+ # hintPlayerIndex --> client.dl * 738191303 - static I
+ # npcIndices --> client.gu - static [I
+ # experiences --> client.lg - static [I
+ # projectiles --> client.ln - static Lkf;
+ # realLevels --> client.lz - static [I
+ # baseX --> gj.gn * 356488237 - static I
+ # baseY --> ie.gi * -176425063 - static I
+ # region --> ie.hl - static Lhy;
+ # gameState --> client.ca * -446123719 - static I
+ # itemContainers --> br.l - static Lni;
+ # screenWidth --> client.td * -1067117511 - static I
+ # mapOffset --> client.iw * 903011995 - static I
+ # widgetNodes --> client.nk - static Lni;
+ # renderRules --> bl.q - static [[[B
+ # widgets --> jt.t - static [[Ljt;
+ # cycle --> client.ck * 1925844067 - static I
+ & loadItemDefinition --> cr.l(II)Lfa; [-1326107109] - int
+ & loadNpcDefinition --> dl.q(II)Lfg; [-881265758] - int
+ # mapAngle --> client.ib * 365891595 - static I
+ # hintY --> client.dj * -184366361 - static I
+ # hintX --> client.df * -1730965 - static I
+ # player --> bh.lh - static Lci;
+ # widgetWidths --> client.pg - static [I
+ # groundItems --> client.lf - static [[[Lkf;
+ # screenHeight --> client.tf * -678405889 - static I
+ # localPlayerIndex --> client.km * -356697653 - static I
+ # cameraY --> ex.ij * 1386974475 - static I
+ # cameraZ --> s.ig * -2083803303 - static I
+ # cameraX --> d.io * -1379782225 - static I
+ # playerIndices --> cn.t - static [I
+ # hoveredRegionTileX --> hy.aa - static I
+ # gameSettings --> iv.q - static [I
+ # hoveredRegionTileY --> hy.ag - static I
+ & loadObjectDefinition --> ir.q(II)Lfo; [-1547455637] - int
+ # mouseIdleTime --> al.m * 412425653 - static I
+ # screenZoom --> client.tn * -717512689 - static I
+ # levels --> client.lp - static [I
+ # cameraPitch --> fv.iq * -866840671 - static I
+ # username --> bi.bg - static Ljava/lang/String;
+FloorDecoration as 'gv'
+ ^ implements com/minibot/internal/accessors/oldschool/RSFloorDecoration
+ # plane --> gv.l * 991061131 - I
+ # worldX --> gv.q * 1601758079 - I
+ # worldY --> gv.f * 782571425 - I
+ # flags --> gv.k * -1317615523 - I
+ # model --> gv.j - Lhi;
+ # id --> gv.m - J
+HashTable as 'ni'
+ ^ implements com/minibot/internal/accessors/oldschool/RSHashTable
+ # head --> ni.f - Lnv;
+ # size --> ni.l - I
+ # tail --> ni.j - Lnv;
+ # buckets --> ni.q - [Lnv;
+ # index --> ni.m - I
+HealthBar as 'BROKEN'
+HitUpdate as 'cp'
+ ^ implements com/minibot/internal/accessors/oldschool/RSHitUpdate
+ # startWidth --> cp.q * 744846681 - I
+ # currentWidth --> cp.f * 1258923613 - I
+ # startCycle --> cp.l * 1748239019 - I
+ # currentCycle --> cp.j * 2039342643 - I
+InteractableObject as 'hw'
+ ^ implements com/minibot/internal/accessors/oldschool/RSInteractableObject
+ # plane --> hw.l * -293523157 - I
+ # worldX --> hw.f * -104021669 - I
+ # worldY --> hw.j * 1641604505 - I
+ # x --> hw.t * -1181203843 - I
+ # y --> hw.e * -1281231503 - I
+ # id --> hw.g - J
+ # height --> hw.q * -643482159 - I
+Item as 'cv'
+ ^ implements com/minibot/internal/accessors/oldschool/RSItem
+ # stackSize --> cv.q * -2008394151 - I
+ # id --> cv.l * -1760777195 - I
+ItemContainer as 'br'
+ ^ implements com/minibot/internal/accessors/oldschool/RSItemContainer
+ # ids --> br.q - [I
+ # stackSizes --> br.f - [I
+ItemDefinition as 'fa'
+ ^ implements com/minibot/internal/accessors/oldschool/RSItemDefinition
+ # groundActions --> fa.ak - [Ljava/lang/String;
+ # name --> fa.c - Ljava/lang/String;
+ # id --> fa.v * -1517930851 - I
+ # actions --> fa.ah - [Ljava/lang/String;
+LinkedList as 'BROKEN'
+Model as 'hl'
+ ^ implements com/minibot/internal/accessors/oldschool/RSModel
+NamePair as 'pm'
+ ^ implements com/minibot/internal/accessors/oldschool/RSNamePair
+ # formatted --> pm.q - Ljava/lang/String;
+ # raw --> pm.l - Ljava/lang/String;
+Node as 'nv'
+ ^ implements com/minibot/internal/accessors/oldschool/RSNode
+ # next --> nv.fq - Lnv;
+ # uid --> nv.fa - J
+ # previous --> nv.fe - Lnv;
+NodeDeque as 'kf'
+ ^ implements com/minibot/internal/accessors/oldschool/RSNodeDeque
+ # head --> kf.q - Lnv;
+ & next --> kf.i()Lnv;
+ & current --> kf.t()Lnv;
+ # tail --> kf.l - Lnv;
+Npc as 'cw'
+ ^ implements com/minibot/internal/accessors/oldschool/RSNpc
+ # definition --> cw.l - Lfg;
+NpcDefinition as 'fg'
+ ^ implements com/minibot/internal/accessors/oldschool/RSNpcDefinition
+ & transform --> fg.a(I)Lfg; [12794314] - int
+ # level --> fg.r * -1028709613 - I
+ # transformIndex --> fg.ay * 860386671 - I
+ # name --> fg.k - Ljava/lang/String;
+ # id --> fg.m * -1515289597 - I
+ # transformIds --> fg.ah - [I
+ # actions --> fg.h - [Ljava/lang/String;
+ObjectDefinition as 'fo'
+ ^ implements com/minibot/internal/accessors/oldschool/RSObjectDefinition
+ # sizeX --> fo.p * -2102964255 - I
+ & transform --> fo.w(B)Lfo; [3] - byte
+ # transformIndex --> fo.av * 361978407 - I
+ # name --> fo.w - Ljava/lang/String;
+ # baseColors --> fo.s - [S
+ # id --> fo.e * 1967132325 - I
+ # transformIds --> fo.an - [I
+ # actions --> fo.as - [Ljava/lang/String;
+ # colors --> fo.c - [S
+ # sizeY --> fo.x * 2087941395 - I
+Player as 'ci'
+ ^ implements com/minibot/internal/accessors/oldschool/RSPlayer
+ # namePair --> ci.l - Lpm;
+Projectile as 'bq'
+ ^ implements com/minibot/internal/accessors/oldschool/RSProjectile
+ # sequence --> bq.r - Lfe;
+ # id --> bq.l * 612017877 - I
+ # moving --> bq.w - Z
+ # cycle --> bq.a * 1759593837 - I
+Queue as 'kz'
+ ^ implements com/minibot/internal/accessors/oldschool/RSQueue
+ # head --> kz.l - Lnu;
+Region as 'hy'
+ ^ implements com/minibot/internal/accessors/oldschool/RSRegion
+ # tiles --> hy.k - [[[Lhz;
+ # objects --> hy.e - [Lhw;
+RenderableNode as 'hi'
+ ^ implements com/minibot/internal/accessors/oldschool/RSRenderableNode
+ # height --> hi.cz * -721981307 - I
+Tile as 'hz'
+ ^ implements com/minibot/internal/accessors/oldschool/RSTile
+ # wallDecoration --> hz.a - Lhk;
+ # boundary --> hz.a - Lhk;
+ # plane --> hz.l * -913512681 - I
+ # objects --> hz.w - [Lhw;
+ # floorDecoration --> hz.e - Lgv;
+ # x --> hz.q * -1268550147 - I
+ # y --> hz.f * 1887131347 - I
+Varpbits as 'iv'
+ ^ implements com/minibot/internal/accessors/oldschool/RSVarpbits
+WallDecoration as 'hk'
+ ^ implements com/minibot/internal/accessors/oldschool/RSWallDecoration
+ # plane --> hk.l * -486262227 - I
+ # backup --> hk.e - Lhi;
+ # orientation --> hk.k * -1930286525 - I
+ # worldX --> hk.q * 1658643165 - I
+ # worldY --> hk.f * -457731185 - I
+ # flags --> hk.t * -607759825 - I
+ # model --> hk.a - Lhi;
+ # id --> hk.i - J
+Widget as 'jt'
+ ^ implements com/minibot/internal/accessors/oldschool/RSWidget
+ # owner --> jt.cm - Ljt;
+ # itemIds --> jt.ed - [I
+ # index --> jt.z * -886488703 - I
+ # textureId --> jt.bt * -1605814115 - I
+ # ownerId --> jt.aq * 802202319 - I
+ # type --> jt.h * 1172876095 - I
+ # boundsIndex --> jt.fk * 1516024327 - I
+ # itemId --> jt.ex * 1708716531 - I
+ # children --> jt.fs - [Ljt;
+ # itemAmount --> jt.eo * -1521917383 - I
+ # x --> jt.ay * 754583103 - I
+ # width --> jt.ao * -2019463933 - I
+ # y --> jt.al * -66554765 - I
+ # scrollY --> jt.at * 379140179 - I
+ # id --> jt.p * -1239763633 - I
+ # text --> jt.ct - Ljava/lang/String;
+ # scrollX --> jt.ac * -1647106185 - I
+ # actions --> jt.cb - [Ljava/lang/String;
+ # stackSizes --> jt.ey - [I
+ # height --> jt.au * -1955651309 - I
+WidgetNode as 'ct'
+ ^ implements com/minibot/internal/accessors/oldschool/RSWidgetNode
+ # id --> ct.l * 1049633095 - I
+4915/8229 [V: 3314]
+graphs --> 3314 in 0.38 seconds
+trees --> 80888 in 0.25 seconds
+multipliers --> 1170 in 0.23 seconds
+predicates --> 1603 in 0.03 seconds
+classes --> 31/33
+hooks --> 171/172
+execution --> 1.87 seconds
+hash --> -382067663
+
+
+Process finished with exit code 0
